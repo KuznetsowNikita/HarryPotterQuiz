@@ -15,7 +15,7 @@
 		F25205312A0A333400D20748 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25205302A0A333400D20748 /* ResultView.swift */; };
 		F281BF5E29EE8A0000F320FF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281BF5D29EE8A0000F320FF /* GameView.swift */; };
 		F281BF6229EE8E8800F320FF /* QuestionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F281BF6129EE8E8800F320FF /* QuestionAnswer.swift */; };
-		F28889F12A160BD000110E0E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F28889F02A160BD000110E0E /* .gitignore */; };
+		F28EC81A2A1B8CC500D8CDC7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F28EC8192A1B8CC500D8CDC7 /* .gitignore */; };
 		F2940F9C2A1230EE00836A3A /* Pods_HarryPotterFans.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D565ECE0A9218DBE61BCC5F /* Pods_HarryPotterFans.framework */; };
 		F2B0A97C29ED3E3000E29161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0A97B29ED3E3000E29161 /* AppDelegate.swift */; };
 		F2B0A97E29ED3E3000E29161 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0A97D29ED3E3000E29161 /* SceneDelegate.swift */; };
@@ -39,7 +39,7 @@
 		F25205302A0A333400D20748 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		F281BF5D29EE8A0000F320FF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F281BF6129EE8E8800F320FF /* QuestionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswer.swift; sourceTree = "<group>"; };
-		F28889F02A160BD000110E0E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F28EC8192A1B8CC500D8CDC7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F2B0A97829ED3E3000E29161 /* HarryPotterFans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotterFans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B0A97B29ED3E3000E29161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B0A97D29ED3E3000E29161 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				F281BF6129EE8E8800F320FF /* QuestionAnswer.swift */,
 				F2B0A98429ED3E3100E29161 /* Assets.xcassets */,
 				F2B0A98929ED3E3200E29161 /* Info.plist */,
-				F28889F02A160BD000110E0E /* .gitignore */,
+				F28EC8192A1B8CC500D8CDC7 /* .gitignore */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28889F12A160BD000110E0E /* .gitignore in Resources */,
+				F28EC81A2A1B8CC500D8CDC7 /* .gitignore in Resources */,
 				F2B0A98829ED3E3200E29161 /* LaunchScreen.storyboard in Resources */,
 				F2B0A98529ED3E3100E29161 /* Assets.xcassets in Resources */,
 				F2B0A98329ED3E3000E29161 /* Main.storyboard in Resources */,
