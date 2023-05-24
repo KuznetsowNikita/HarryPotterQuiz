@@ -14,6 +14,9 @@ class GameView: UIViewController {
     var trueFalseLogic = false
     var countOfPoints = 0
     var login: String?
+    var timer: Timer = Timer()
+    var count: Int = 0
+    var timerCounting: Bool = false
     
     @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet weak var questionImage: UIImageView!
@@ -27,13 +30,13 @@ class GameView: UIViewController {
     @IBOutlet weak var saveResultButton: UIButton!
     @IBOutlet weak var exitResulButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var timerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         resultImage.isHidden = true
         saveResultButton.isHidden = true
         exitResulButton.isHidden = true
-        
     }
     @IBAction func saveResultButtonAction(_ sender: Any) {
         saveNewResult()
@@ -42,6 +45,18 @@ class GameView: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func goNextQuestionButtonTapped(_ sender: Any) {
+       
+        if(timerCounting)
+        {
+            timerCounting = false
+            timer.invalidate()
+        }
+        else
+        {
+            timerCounting = true
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCounter), userInfo: nil, repeats: true)
+        }
+        
         goQuestion()
         number += 1
     }
@@ -273,7 +288,26 @@ class GameView: UIViewController {
         countOfPoints += 1
         countLabel.text = "\(countOfPoints)/10"
         timeToReloadInterface()
-        print("123")
     }
+    @objc private func timerCounter() -> Void
+    {
+        count = count + 1
+        let time = secondsToMinutesSeconds(secondes: count)
+        let timeString = makeTimeString(minutes: time.0, seconds: time.1)
+        timerLabel.text = timeString
+    }
+    private func secondsToMinutesSeconds(secondes: Int) -> (Int, Int)
+    {
+        return((secondes / 3600), (secondes % 3600) / 60)
+    }
+    private func makeTimeString(minutes: Int, seconds: Int) -> String
+    {
+        var timeString = ""
+        timeString += String(format: "0%2d", minutes)
+        timeString += " : "
+        timeString += String(format: "0%2d", seconds)
+        return timeString
+    }
+    
 }
 

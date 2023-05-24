@@ -430,6 +430,13 @@
                                     <action selector="exitButtonAction:" destination="HTK-wm-gnr" eventType="touchUpInside" id="1rR-Xc-Kef"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-SM-r7P">
+                                <rect key="frame" x="161.33333333333334" y="38" width="70.333333333333343" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W46-dS-8qa"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
@@ -450,7 +457,9 @@
                             <constraint firstItem="W46-dS-8qa" firstAttribute="trailing" secondItem="2ue-u1-Jze" secondAttribute="trailing" constant="16" id="Tld-yT-UWu"/>
                             <constraint firstItem="W46-dS-8qa" firstAttribute="trailing" secondItem="zQy-It-Udc" secondAttribute="trailing" constant="151" id="V1v-4C-l9M"/>
                             <constraint firstItem="1im-zn-vEo" firstAttribute="centerX" secondItem="2FA-dG-k2b" secondAttribute="centerX" id="XAM-mU-uf2"/>
+                            <constraint firstItem="zQM-SM-r7P" firstAttribute="top" secondItem="W46-dS-8qa" secondAttribute="top" constant="38" id="Yks-cB-kdR"/>
                             <constraint firstItem="W46-dS-8qa" firstAttribute="bottom" secondItem="Xzh-mE-MRk" secondAttribute="bottom" constant="3" id="fiV-wh-SKP"/>
+                            <constraint firstItem="zQM-SM-r7P" firstAttribute="centerX" secondItem="2FA-dG-k2b" secondAttribute="centerX" id="gQ2-fO-qlm"/>
                             <constraint firstItem="2ue-u1-Jze" firstAttribute="leading" secondItem="W46-dS-8qa" secondAttribute="leading" constant="16" id="hLl-Dz-EVO"/>
                             <constraint firstItem="leb-qB-SOJ" firstAttribute="centerX" secondItem="2FA-dG-k2b" secondAttribute="centerX" id="ksx-4g-cxL"/>
                             <constraint firstItem="ZhL-gV-Dff" firstAttribute="top" secondItem="W46-dS-8qa" secondAttribute="top" constant="5" id="pD7-0I-hwQ"/>
@@ -475,6 +484,7 @@
                         <outlet property="questionLabel" destination="2ue-u1-Jze" id="eH5-49-buj"/>
                         <outlet property="resultImage" destination="leb-qB-SOJ" id="THk-WF-96w"/>
                         <outlet property="saveResultButton" destination="Xzh-mE-MRk" id="Xt0-LY-t0Q"/>
+                        <outlet property="timerLabel" destination="zQM-SM-r7P" id="GpX-C4-m1C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKW-wb-MGo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -521,6 +531,9 @@
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
