@@ -11,7 +11,8 @@ import RealmSwift
 class ResultView: UITableViewController {
 
     var modelResults: Results<ModelResults>!
-    
+    var tableViewCell = TableViewCell()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,10 +28,14 @@ class ResultView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
         
-        cell.textLabel?.text = modelResults[indexPath.row].name
-        cell.detailTextLabel?.text = modelResults[indexPath.row].result
+//        cell.textLabel?.text = modelResults[indexPath.row].name
+//        cell.detailTextLabel?.text = modelResults[indexPath.row].result
+        
+        cell.nameLabel.text = modelResults[indexPath.row].name
+        cell.timeLabel.text = modelResults[indexPath.row].time
+        cell.resultLabel.text = modelResults[indexPath.row].result
         
         return cell
     }

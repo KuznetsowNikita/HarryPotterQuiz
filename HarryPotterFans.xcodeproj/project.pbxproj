@@ -10,6 +10,7 @@
 		F218567F29F3BEE300429BAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218567E29F3BEE300429BAC /* LoginViewController.swift */; };
 		F218568129F3BF6A00429BAC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218568029F3BF6A00429BAC /* MenuViewController.swift */; };
 		F218568329F3C18700429BAC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F218568229F3C18700429BAC /* GameViewController.swift */; };
+		F23FCC312A20A9BF007D99EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FCC302A20A9BF007D99EB /* TableViewCell.swift */; };
 		F243F4C12A08E32A00FB6DC0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243F4C02A08E32A00FB6DC0 /* ResultViewController.swift */; };
 		F243F4C32A08E68300FB6DC0 /* ModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F243F4C22A08E68300FB6DC0 /* ModelResult.swift */; };
 		F25205312A0A333400D20748 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25205302A0A333400D20748 /* ResultView.swift */; };
@@ -34,6 +35,7 @@
 		F218567E29F3BEE300429BAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F218568029F3BF6A00429BAC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F218568229F3C18700429BAC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F23FCC302A20A9BF007D99EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F243F4C02A08E32A00FB6DC0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F243F4C22A08E68300FB6DC0 /* ModelResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelResult.swift; sourceTree = "<group>"; };
 		F25205302A0A333400D20748 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				F25205302A0A333400D20748 /* ResultView.swift */,
+				F23FCC302A20A9BF007D99EB /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				F2B0A98029ED3E3000E29161 /* LoginView.swift in Sources */,
 				F2B0A97C29ED3E3000E29161 /* AppDelegate.swift in Sources */,
 				F218568329F3C18700429BAC /* GameViewController.swift in Sources */,
+				F23FCC312A20A9BF007D99EB /* TableViewCell.swift in Sources */,
 				F25205312A0A333400D20748 /* ResultView.swift in Sources */,
 				F281BF6229EE8E8800F320FF /* QuestionAnswer.swift in Sources */,
 				F2B0A97E29ED3E3000E29161 /* SceneDelegate.swift in Sources */,
